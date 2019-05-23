@@ -1,0 +1,13 @@
+Spring 통해서 (객체의 생성과 조립(injection))
+
+1.xml 설정을 통해서(bean 생성, injection)
+
+2.xml 문서 없이도 지금과 같은 동일 작업 가능
+	>> 자바코드 이용해서 설정 작업(JAVA 파일 + Annotation)
+	>> xml 파일 (x)
+
+3.  기존 xml :
+	ApplicationContext context = new GenericXmlApplicationContext("classpath:DI_Annotation_04/DI_Annotation_04.xml");
+	
+	현재 java :
+	ApplicationContext context = new AnnotationConfigApplicationContext(ConfigContext.class);
